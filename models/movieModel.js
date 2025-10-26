@@ -2,28 +2,28 @@ import mongoose from "mongoose";
 
 const MovieSchema = new mongoose.Schema(
     {
-        judul: {
-            type : String,
-            unique : true,
+        judul : {
+            type: String,
+            unique: true,
             required: true,
-            trim: true,
+            trim: true
         },
         tahunRilis : {
-            type : String,
-            required: true,
-            trim: true,
-        },
-        sutradara: {
             type: String,
             required: true,
-            trim: true,
+            trim: true
         },
+        sutradara : {
+            type: String,
+            required: true,
+            trim: true
+        }
     },
     {
-        timestamps: true,
+        timestamps : true
     }
 );
 
-const MovieModel = mongoose.model("movies", MovieSchema);
+const movieModel = mongoose.model("movie", MovieSchema)
 
-export default MovieModel;
+export default movieModel;

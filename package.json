@@ -2,20 +2,25 @@
   "name": "movie-express",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev" : "nodemon app.js"
-  },
+  "main": "app.js",
   "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "D": "^1.0.0",
     "express": "^5.1.0",
-    "mongoose": "^8.19.2"
-  },
-  "devDependencies": {
+    "mongoose": "^8.19.2",
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2327240031MDP/movie-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/2327240031MDP/movie-express/issues"
+  },
+  "homepage": "https://github.com/2327240031MDP/movie-express#readme"
 }

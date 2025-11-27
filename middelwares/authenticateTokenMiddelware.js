@@ -17,7 +17,7 @@ export const authenticateTokenMiddleware = (req, res, next) => {
         });
     }
 
-    jwt.verify(token, "APP_JWT_SECRET", (err, decode) => {
+    jwt.verify(token, "APP_JWT_SECRET", (err, decoded) => {
         if (err) {
             return res.status(401).send({
                 error: "Invalid token",
